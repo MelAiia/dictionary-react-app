@@ -6,3 +6,18 @@
   padding: 45px;
   box-shadow: 0 15px 40px rgba(1, 53, 44, 0.08);
 }
+
+.Header {
+  text-align: center;
+}
+
+.Header h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+
+.Header p {
+  color: var(--text);
+  margin-bottom: 40px;
+}
