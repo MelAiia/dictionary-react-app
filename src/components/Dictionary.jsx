@@ -10,7 +10,7 @@ function Dictionary() {
     <main className="Dictionary">
       <Header />
       <SearchForm setResult={setResult} />
-      <Results />
+      {result && <Results result={result} />}
       <Footer />
     </main>
   );

@@ -37,8 +37,6 @@ function SearchForm({ setResult }) {
         <button type="submit">Search</button>
       </form>
 
-      {result && <Results result={result} />}
-
       <small>Type a word and press Search to see its meaning.</small>
     </section>
   );
