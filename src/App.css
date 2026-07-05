@@ -1,0 +1,8 @@
+.Dictionary {
+  max-width: 960px;
+  margin: 60px auto;
+  background: white;
+  border-radius: 24px;
+  padding: 45px;
+  box-shadow: 0 15px 40px rgba(1, 53, 44, 0.08);
+}
