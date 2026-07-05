@@ -7,6 +7,12 @@ function SearchForm() {
     setWord(event.target.value);
   }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    console.log(word);
+  }
+
   return (
     <section className="SearchForm">
       <form>
