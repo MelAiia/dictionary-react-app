@@ -1,10 +1,14 @@
 function SearchForm() {
   return (
-    <form>
-      <input type="search" placeholder="Enter a word..." />
+    <section className="SearchForm">
+      <form>
+        <input type="search" placeholder="Enter a word..." autoFocus />
 
-      <button type="submit">Search</button>
-    </form>
+        <button type="submit">Search</button>
+      </form>
+
+      <small>Type a word and press Search to see its meaning.</small>
+    </section>
   );
 }
 
