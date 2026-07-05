@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 function SearchForm() {
+  const [word, setWord] = useState("");
+
   return (
     <section className="SearchForm">
       <form>
