@@ -8,7 +8,7 @@ function SearchForm() {
     setWord(event.target.value);
   }
 
-  function search() {
+  function searchDictionary() {
     const apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
 
     axios.get(apiUrl).then(showResponse);
@@ -25,11 +25,12 @@ function SearchForm() {
 
   return (
     <section className="SearchForm">
-      <form>
+      <form onSubmit={handleSubmit}>
         <input
           type="search"
           placeholder="Enter a word..."
           autoFocus
+          value={word}
           onChange={handleWordChange}
         />
 
