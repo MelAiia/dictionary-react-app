@@ -1,10 +1,12 @@
+import Header from "./Header";
+import SearchForm from "./SearchForm";
 import Footer from "./Footer";
 
 function Dictionary() {
   return (
     <div className="Dictionary">
-      <h1>Dictionary</h1>
-
+      <Header />
+      <SearchForm />
       <Footer />
     </div>
   );
