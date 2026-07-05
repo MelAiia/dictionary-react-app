@@ -21,3 +21,41 @@
   color: var(--text);
   margin-bottom: 40px;
 }
+
+.SearchForm form {
+  display: flex;
+  gap: 15px;
+}
+
+.SearchForm input {
+  flex: 1;
+  padding: 18px 22px;
+  border-radius: 14px;
+  border: 2px solid var(--border);
+  font-size: 16px;
+}
+
+.SearchForm input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.SearchForm button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 18px 36px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.SearchForm button:hover {
+  background: var(--dark);
+}
+
+.SearchForm small {
+  display: block;
+  margin-top: 12px;
+  color: var(--text);
+}
