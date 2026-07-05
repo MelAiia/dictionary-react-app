@@ -1,9 +1,19 @@
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f8f9fa;
+:root {
+  --background: #e1eacd;
+  --primary: #61b390;
+  --dark: #01352c;
+  --border: #bad8b6;
+  --text: #4f5d59;
+  --white: #ffffff;
 }
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  font-family: "Inter", sans-serif;
+  color: var(--dark);
 }
