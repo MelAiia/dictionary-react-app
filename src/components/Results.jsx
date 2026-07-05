@@ -1,11 +1,15 @@
 function Results({ result }) {
+  const wordData = result[0];
+  const meaning = wordData.meanings[0];
+  const definition = meaning.definitions[0];
+
   return (
     <section className="Results">
-      <h2>{result[0].word}</h2>
+      <h2>{wordData.word}</h2>
 
-      <p>{result[0].phonetic}</p>
+      <p>{wordData.phonetic}</p>
 
-      <p>{result[0].meanings[0].definitions[0].definition}</p>
+      <p>{definition.definition}</p>
     </section>
   );
 }
