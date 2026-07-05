@@ -4,11 +4,11 @@ import Footer from "./Footer";
 
 function Dictionary() {
   return (
-    <div className="Dictionary">
+    <main className="Dictionary">
       <Header />
       <SearchForm />
       <Footer />
-    </div>
+    </main>
   );
 }
 

@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer>
+    <footer className="Footer">
       This project was coded by{" "}
       <a
         href="https://www.linkedin.com/in/aiia-melnychenko-09b52a275/"
