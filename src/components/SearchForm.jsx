@@ -20,7 +20,7 @@ function SearchForm() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    search();
+    searchDictionary();
   }
 
   return (
