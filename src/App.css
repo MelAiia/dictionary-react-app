@@ -59,3 +59,19 @@
   margin-top: 12px;
   color: var(--text);
 }
+
+.Footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.Footer a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.Footer a:hover {
+  color: var(--dark);
+}
