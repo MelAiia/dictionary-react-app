@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-function SearchForm() {
+function SearchForm({ setResult }) {
   const [word, setWord] = useState("");
 
   function handleWordChange(event) {
@@ -15,7 +15,7 @@ function SearchForm() {
   }
 
   function showResponse(response) {
-    console.log(response);
+    setResult(response.data);
   }
 
   function handleSubmit(event) {
@@ -37,7 +37,7 @@ function SearchForm() {
         <button type="submit">Search</button>
       </form>
 
-      <p>Searching for: {word}</p>
+      {result && <Results result={result} />}
 
       <small>Type a word and press Search to see its meaning.</small>
     </section>
