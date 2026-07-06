@@ -1,3 +1,4 @@
+import "../styles/Meaning.css";
 import Synonyms from "./Synonyms";
 
 function Meaning({ meaning }) {

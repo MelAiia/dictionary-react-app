@@ -1,3 +1,4 @@
+import "../styles/Results.css";
 import Meaning from "./Meaning";
 import Phonetics from "./Phonetics";
 
