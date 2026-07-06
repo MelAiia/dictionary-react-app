@@ -1,29 +1,79 @@
 .Header {
+  position: relative;
+
+  overflow: hidden;
+
   text-align: center;
+
+  padding: 55px 40px 35px;
+
+  margin-bottom: 35px;
+
+  border-radius: 24px;
+
+  background: linear-gradient(180deg, #ffffff 0%, #f7fbf5 100%);
+
+  box-shadow: 0 10px 30px rgba(1, 53, 44, 0.08);
 }
 
 .Header h1 {
-  font-size: 68px;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-size: 72px;
+
+  margin: 15px 0 10px;
+
   color: var(--dark);
+
+  font-weight: 700;
 }
 
 .Header p {
+  font-size: 22px;
   color: var(--text);
   margin-bottom: 40px;
 }
 
 .Header-icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 20px;
+  width: 90px;
+
+  height: 90px;
+
+  margin: 0 auto;
+
   border-radius: 50%;
+
   background: var(--border);
 
   display: flex;
+
   justify-content: center;
+
   align-items: center;
 
-  font-size: 40px;
+  font-size: 42px;
+
+  box-shadow: 0 10px 20px rgba(97, 179, 144, 0.18);
+}
+
+.Header-decoration {
+  position: absolute;
+
+  width: 220px;
+
+  height: 220px;
+
+  border-radius: 50%;
+
+  background: rgba(97, 179, 144, 0.08);
+
+  filter: blur(20px);
+}
+
+.Header-decoration.left {
+  top: -70px;
+  left: -70px;
+}
+
+.Header-decoration.right {
+  right: -70px;
+  top: -50px;
 }
