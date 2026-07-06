@@ -1,39 +1,83 @@
-.SearchForm form {
+.SearchForm {
+  margin-top: 45px;
+}
+
+.search-form {
   display: flex;
-  gap: 15px;
+  align-items: center;
+  gap: 14px;
 }
 
-.SearchForm input {
+.search-form input {
   flex: 1;
-  padding: 22px 24px;
-  border-radius: 14px;
-  border: 2px solid var(--border);
-  font-size: 16px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
-  transition: 0.25s;
+
+  padding: 20px 24px;
+
+  border-radius: 18px;
+
+  border: 2px solid transparent;
+
+  background: var(--white);
+
+  font-size: 17px;
+
+  color: var(--dark);
+
+  box-shadow: 0 10px 30px rgba(1, 53, 44, 0.06);
+
+  transition: all 250ms ease;
 }
 
-.SearchForm input:focus {
+.search-form input:focus {
+  outline: none;
+
   border-color: var(--primary);
+
+  box-shadow:
+    0 10px 30px rgba(1, 53, 44, 0.08),
+    0 0 0 5px rgba(97, 179, 144, 0.12);
 }
 
-.SearchForm button {
-  background: var(--primary);
-  color: white;
-  font-weight: 600;
+.search-form input::placeholder {
+  color: #8c9b95;
+}
+
+.search-form button {
+  padding: 20px 34px;
+
   border: none;
-  padding: 22px 34px;
-  border-radius: 14px;
+
+  border-radius: 18px;
+
+  background: linear-gradient(135deg, #61b390, #4d9e7f);
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
   cursor: pointer;
-  transition: 0.25s;
+
+  transition: all 250ms ease;
 }
 
-.SearchForm button:hover {
-  background: var(--dark);
+.search-form button:hover {
+  background: linear-gradient(135deg, #01352c, #0b5b4b);
+
+  transform: translateY(-2px);
+}
+
+.search-form button:active {
+  transform: scale(0.97);
 }
 
 .SearchForm small {
   display: block;
-  margin-top: 12px;
+
+  margin-top: 16px;
+
   color: var(--text);
+
+  font-size: 14px;
 }

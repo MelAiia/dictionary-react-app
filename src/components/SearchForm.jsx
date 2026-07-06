@@ -26,10 +26,10 @@ function SearchForm({ setResult }) {
 
   return (
     <section className="SearchForm">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="search-form">
         <input
           type="search"
-          placeholder="Enter a word..."
+          placeholder="Search an English word..."
           autoFocus
           value={word}
           onChange={handleWordChange}
@@ -38,7 +38,7 @@ function SearchForm({ setResult }) {
         <button type="submit">Search</button>
       </form>
 
-      <small>Type a word and press Search to see its meaning.</small>
+      <small>Explore meanings, pronunciations, synonyms and examples.</small>
     </section>
   );
 }
