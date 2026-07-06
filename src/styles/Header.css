@@ -33,25 +33,27 @@
 }
 
 .Header-icon {
-  width: 90px;
+  width: 88px;
+  height: 88px;
 
-  height: 90px;
+  margin: 0 auto 20px;
 
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   border-radius: 50%;
 
-  background: var(--border);
+  background: rgba(97, 179, 144, 0.15);
 
-  display: flex;
+  box-shadow: 0 12px 25px rgba(97, 179, 144, 0.15);
+}
 
-  justify-content: center;
+.Header-icon img {
+  width: 42px;
+  height: 42px;
 
-  align-items: center;
-
-  font-size: 42px;
-
-  box-shadow: 0 10px 20px rgba(97, 179, 144, 0.18);
+  color: var(--dark);
 }
 
 .Header-decoration {
@@ -76,4 +78,9 @@
 .Header-decoration.right {
   right: -70px;
   top: -50px;
+}
+
+.Header-content {
+  position: relative;
+  z-index: 2;
 }
