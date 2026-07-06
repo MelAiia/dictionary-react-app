@@ -1,5 +1,5 @@
 .Meaning {
-  padding: 25px 0;
+  padding: 30px 0;
   border-top: 1px solid #e1eacd;
 }
 
@@ -11,6 +11,10 @@
 .Meaning p {
   color: #444;
   line-height: 1.8;
+}
+
+.Meaning:last-child {
+  padding-bottom: 0;
 }
 
 .example {

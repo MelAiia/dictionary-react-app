@@ -4,6 +4,7 @@
   padding: 30px;
   border-radius: 18px;
   box-shadow: 0 8px 25px rgba(1, 53, 44, 0.08);
+  transition: 0.3s;
 }
 
 .Results h2 {
@@ -11,4 +12,5 @@
   color: var(--dark);
   font-size: 46px;
   font-weight: 700;
+  letter-spacing: -1px;
 }
