@@ -1,4 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5V4.5A2.5 2.5 0 0 1 6.5 2z"></path>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 64 64"
+     fill="none">
+
+  <path
+      d="M18 14
+         C18 11 20 10 23 10
+         H48
+         V50
+         H23
+         C20 50 18 52 18 54
+         Z"
+
+      stroke="#01352c"
+      stroke-width="2"
+      stroke-linejoin="round"/>
+
+  <path
+      d="M18 14
+         C18 11 20 10 23 10"
+
+      stroke="#01352c"
+      stroke-width="2"
+      stroke-linecap="round"/>
+
+  <line
+      x1="27"
+      y1="18"
+      x2="43"
+      y2="18"
+
+      stroke="#61b390"
+      stroke-width="2"
+      stroke-linecap="round"/>
+
+  <line
+      x1="27"
+      y1="24"
+      x2="40"
+      y2="24"
+
+      stroke="#61b390"
+      stroke-width="2"
+      stroke-linecap="round"/>
 </svg>
