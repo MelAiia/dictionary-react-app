@@ -17,10 +17,12 @@ function Header({ setResult }) {
         <div className="Header-icon">
           <img src={bookIcon} alt="Dictionary" />
         </div>
-        <img src={heroDots} alt="" className="hero-dots" />
+
         <h1>Dictionary</h1>
 
         <p>Find definitions, pronunciations and examples.</p>
+
+        <img src={heroDots} alt="" className="hero-dots" />
 
         <SearchForm setResult={setResult} />
       </div>
