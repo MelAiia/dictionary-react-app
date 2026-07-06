@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
 
-  padding: 70px 50px 60px;
+  padding: 80px 50px 70px;
 
   border-radius: 28px;
 
@@ -45,14 +45,19 @@
   justify-content: center;
   align-items: center;
 
+  border: 1px solid rgba(255, 255, 255, 0.45);
+
   border-radius: 50%;
 
   background: rgba(186, 216, 182, 0.35);
 
   backdrop-filter: blur(12px);
 
-  box-shadow: 0 10px 35px rgba(97, 179, 144, 0.18);
+  box-shadow:
+    0 12px 30px rgba(97, 179, 144, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65);
   transition: transform 250ms ease;
+  position: relative;
 }
 
 .Header-icon:hover {
@@ -60,13 +65,15 @@
 }
 
 .Header-icon img {
-  width: 42px;
-  height: auto;
+  width: 46px;
+  display: block;
 }
 
 .Header-content {
   position: relative;
   z-index: 10;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 .hero-left,
@@ -140,9 +147,9 @@
 
   border-radius: 50%;
 
-  background: rgba(225, 234, 205, 0.6);
+  background: rgba(225, 234, 205, 0.75);
 
-  filter: blur(70px);
+  filter: blur(90px);
 
   z-index: 0;
 }
