@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
 
-  padding: 60px 50px;
+  padding: 70px 50px 60px;
 
   border-radius: 28px;
 
@@ -52,6 +52,11 @@
   backdrop-filter: blur(12px);
 
   box-shadow: 0 10px 35px rgba(97, 179, 144, 0.18);
+  transition: transform 250ms ease;
+}
+
+.Header-icon:hover {
+  transform: translateY(-4px);
 }
 
 .Header-icon img {
@@ -87,4 +92,57 @@
   display: block;
   margin: 30px auto 10px;
   width: 120px;
+}
+
+.Header::before,
+.Header::after {
+  content: "";
+
+  position: absolute;
+
+  border-radius: 50%;
+
+  filter: blur(60px);
+
+  z-index: 0;
+}
+
+.Header::before {
+  width: 260px;
+  height: 260px;
+
+  background: rgba(97, 179, 144, 0.14);
+
+  top: -120px;
+  left: -90px;
+}
+
+.Header::after {
+  width: 220px;
+  height: 220px;
+
+  background: rgba(186, 216, 182, 0.25);
+
+  right: -60px;
+  top: -60px;
+}
+
+.hero-glow {
+  position: absolute;
+
+  width: 320px;
+  height: 320px;
+
+  left: 50%;
+  top: 20px;
+
+  transform: translateX(-50%);
+
+  border-radius: 50%;
+
+  background: rgba(225, 234, 205, 0.6);
+
+  filter: blur(70px);
+
+  z-index: 0;
 }

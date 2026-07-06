@@ -13,6 +13,8 @@ function Header({ setResult }) {
 
       <img src={heroRight} alt="" className="hero-right" />
 
+      <div className="hero-glow"></div>
+
       <div className="Header-content">
         <div className="Header-icon">
           <img src={bookIcon} alt="Dictionary" />
