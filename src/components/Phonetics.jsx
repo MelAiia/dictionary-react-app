@@ -1,3 +1,5 @@
+import "../styles/Phonetics.css";
+
 function Phonetics({ phonetic }) {
   return (
     <div className="Phonetics">

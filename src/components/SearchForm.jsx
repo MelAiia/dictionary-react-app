@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import "../styles/SearchForm.css";
 
 function SearchForm({ setResult }) {
   const [word, setWord] = useState("");

@@ -17,3 +17,12 @@ body {
   font-family: "Inter", sans-serif;
   color: var(--dark);
 }
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

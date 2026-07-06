@@ -1,3 +1,5 @@
+import "../styles/Synonyms.css";
+
 function Synonyms({ synonyms }) {
   if (!synonyms || synonyms.length === 0) {
     return null;

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/Dictionary.css";
 import Header from "./Header";
 import SearchForm from "./SearchForm";
 import Results from "./Results";
