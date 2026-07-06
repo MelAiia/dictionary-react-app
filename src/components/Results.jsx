@@ -1,4 +1,5 @@
 import Meaning from "./Meaning";
+import Phonetics from "./Phonetics";
 
 function Results({ result }) {
   const wordData = result[0];
@@ -7,7 +8,9 @@ function Results({ result }) {
     <section className="Results">
       <h2>{wordData.word}</h2>
 
-      <p>{wordData.phonetic}</p>
+      {wordData.phonetics.map((phonetic, index) => (
+        <Phonetics key={index} phonetic={phonetic} />
+      ))}
 
       {wordData.meanings.map((meaning, index) => (
         <Meaning key={index} meaning={meaning} />
