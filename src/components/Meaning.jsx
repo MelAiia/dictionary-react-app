@@ -4,13 +4,21 @@ import Synonyms from "./Synonyms";
 function Meaning({ meaning }) {
   const definition = meaning.definitions[0];
   return (
-    <section className="Meaning">
-      <h3>{meaning.partOfSpeech}</h3>
-      <p>{definition.definition}</p>
-      {definition.example && <p className="example">{definition.example}</p>}
+    <article className="Meaning">
+      <div className="Meaning-header">
+        <h3>{meaning.partOfSpeech}</h3>
+      </div>
 
-      <Synonyms synonyms={meaning.synonyms} />
-    </section>
+      <div className="Meaning-body">
+        <p className="definition">{definition.definition}</p>
+
+        {definition.example && (
+          <p className="example">"{definition.example}"</p>
+        )}
+
+        <Synonyms synonyms={meaning.synonyms} />
+      </div>
+    </article>
   );
 }
 
