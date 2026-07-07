@@ -1,16 +1,39 @@
 .Results {
+  margin-top: 45px;
+
   background: var(--white);
-  margin-top: 30px;
-  padding: 30px;
-  border-radius: 18px;
-  box-shadow: 0 8px 25px rgba(1, 53, 44, 0.08);
-  transition: 0.3s;
+
+  border-radius: 28px;
+
+  padding: 40px;
+
+  box-shadow: 0 20px 45px rgba(1, 53, 44, 0.08);
+
+  transition: all 250ms ease;
 }
 
-.Results h2 {
+.Results-header {
+  margin-bottom: 34px;
+}
+
+.Results-header h2 {
   margin: 0;
+
+  font-size: 52px;
+
   color: var(--dark);
-  font-size: 46px;
-  font-weight: 700;
+
   letter-spacing: -1px;
+}
+
+.Results-content {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.Results:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 24px 55px rgba(1, 53, 44, 0.12);
 }

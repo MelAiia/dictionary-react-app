@@ -7,15 +7,19 @@ function Results({ result }) {
 
   return (
     <section className="Results">
-      <h2>{wordData.word}</h2>
+      <div className="Results-header">
+        <h2>{wordData.word}</h2>
 
-      {wordData.phonetics.map((phonetic, index) => (
-        <Phonetics key={index} phonetic={phonetic} />
-      ))}
+        {wordData.phonetics.map((phonetic, index) => (
+          <Phonetics key={index} phonetic={phonetic} />
+        ))}
+      </div>
 
-      {wordData.meanings.map((meaning, index) => (
-        <Meaning key={index} meaning={meaning} />
-      ))}
+      <div className="Results-content">
+        {wordData.meanings.map((meaning, index) => (
+          <Meaning key={index} meaning={meaning} />
+        ))}
+      </div>
     </section>
   );
 }
