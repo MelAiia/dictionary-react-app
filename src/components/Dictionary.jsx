@@ -29,12 +29,22 @@ function Dictionary() {
   }
 
   function search(word) {
+    const searchedWord = word.trim();
+
+    if (!searchedWord) {
+      return;
+    }
+
     setResult(null);
     setPhotos([]);
 
-    const dictionaryApiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+    const dictionaryApiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(
+      searchedWord,
+    )}`;
 
-    const pexelsApiUrl = `https://api.pexels.com/v1/search?query=${word}&per_page=6`;
+    const pexelsApiUrl = `https://api.pexels.com/v1/search?query=${encodeURIComponent(
+      searchedWord,
+    )}&per_page=6`;
 
     axios
       .get(dictionaryApiUrl)
