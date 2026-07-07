@@ -16,8 +16,16 @@ function Dictionary() {
     setResult(response.data);
   }
 
+  function handleDictionaryError(error) {
+    console.error("Dictionary API error:", error);
+  }
+
   function handlePhotosResponse(response) {
     setPhotos(response.data.photos);
+  }
+
+  function handlePhotosError(error) {
+    console.error("Pexels API error:", error);
   }
 
   function search(word) {
@@ -28,7 +36,10 @@ function Dictionary() {
 
     const pexelsApiUrl = `https://api.pexels.com/v1/search?query=${word}&per_page=6`;
 
-    axios.get(dictionaryApiUrl).then(handleDictionaryResponse);
+    axios
+      .get(dictionaryApiUrl)
+      .then(handleDictionaryResponse)
+      .catch(handleDictionaryError);
 
     axios
       .get(pexelsApiUrl, {
@@ -36,7 +47,8 @@ function Dictionary() {
           Authorization: pexelsApiKey,
         },
       })
-      .then(handlePhotosResponse);
+      .then(handlePhotosResponse)
+      .catch(handlePhotosError);
   }
 
   return (
