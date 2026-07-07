@@ -6,7 +6,7 @@ import heroDots from "../assets/illustrations/hero-dots.svg";
 
 import SearchForm from "./SearchForm";
 
-function Header({ setResult }) {
+function Header({ onSearch }) {
   return (
     <header className="Header">
       <img src={heroLeft} alt="" className="hero-left" />
@@ -26,7 +26,7 @@ function Header({ setResult }) {
 
         <img src={heroDots} alt="" className="hero-dots" />
 
-        <SearchForm setResult={setResult} />
+        <SearchForm onSearch={onSearch} />
       </div>
     </header>
   );
