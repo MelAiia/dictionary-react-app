@@ -1,0 +1,77 @@
+.Phonetics {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-top: 18px;
+
+  padding: 16px 0;
+}
+
+.Phonetics-text {
+  color: var(--primary);
+
+  font-size: 24px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.5px;
+}
+
+.Phonetics-audio {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid rgba(97, 179, 144, 0.18);
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.45);
+
+  backdrop-filter: blur(8px);
+
+  color: var(--primary);
+
+  cursor: pointer;
+
+  transition: all 250ms ease;
+
+  box-shadow:
+    0 8px 24px rgba(97, 179, 144, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+.Phonetics-audio:hover {
+  transform: scale(1.08);
+
+  background: var(--primary);
+
+  color: white;
+
+  border-color: transparent;
+
+  box-shadow: 0 10px 24px rgba(97, 179, 144, 0.28);
+}
+
+.Phonetics-audio:active {
+  transform: scale(0.95);
+}
+
+.Phonetics-audio img {
+  width: 22px;
+  height: 22px;
+
+  display: block;
+
+  transition: transform 250ms ease;
+}
+
+.Phonetics-audio:hover img {
+  transform: scale(1.08);
+}
