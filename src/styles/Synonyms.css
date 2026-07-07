@@ -1,23 +1,63 @@
-.Synonyms ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 0;
-  list-style: none;
-  margin-top: 20px;
+.Synonyms {
+  margin-top: 28px;
 }
 
-.Synonyms li {
-  background: #e1eacd;
-  color: #01352c;
-  padding: 8px 16px;
-  border-radius: 40px;
+.Synonyms-title {
+  margin-bottom: 16px;
+
+  color: var(--text);
+
   font-size: 14px;
-  transition: 0.25s;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+.Synonyms-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  padding: 0;
+
+  margin: 0;
+
+  list-style: none;
+}
+
+.Synonyms-list li {
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  background: rgba(186, 216, 182, 0.35);
+
+  color: var(--dark);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  border: 1px solid transparent;
+
+  transition: all 250ms ease;
+
   cursor: default;
 }
 
-.Synonyms li:hover {
+.Synonyms-list li:hover {
+  transform: translateY(-2px);
+
   background: var(--primary);
+
   color: white;
+
+  border-color: rgba(255, 255, 255, 0.3);
+
+  box-shadow: 0 8px 18px rgba(97, 179, 144, 0.25);
 }

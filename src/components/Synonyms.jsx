@@ -7,11 +7,13 @@ function Synonyms({ synonyms }) {
 
   return (
     <div className="Synonyms">
-      <h4>Synonyms</h4>
+      <h4 className="Synonyms-title">Synonyms</h4>
 
-      <ul>
+      <ul className="Synonyms-list">
         {synonyms.map((synonym, index) => (
-          <li key={index}>{synonym}</li>
+          <li key={index}>
+            <button type="button">{synonym}</button>
+          </li>
         ))}
       </ul>
     </div>
