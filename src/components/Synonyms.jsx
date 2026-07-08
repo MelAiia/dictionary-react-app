@@ -1,13 +1,13 @@
 import "../styles/Synonyms.css";
 
-function Synonyms({ synonyms }) {
+function Synonyms({ synonyms, hideTitle = false }) {
   if (!synonyms || synonyms.length === 0) {
     return null;
   }
 
   return (
     <div className="Synonyms">
-      <h4 className="Synonyms-title">Synonyms</h4>
+      {!hideTitle && <h4 className="Synonyms-title">Synonyms</h4>}
 
       <ul className="Synonyms-list">
         {synonyms.map((synonym, index) => (
