@@ -1,43 +1,55 @@
 .Meaning {
-  padding: 28px;
+  padding: 0 0 24px;
+  margin-bottom: 24px;
 
-  border-radius: 22px;
+  border-bottom: 1px solid rgba(1, 53, 44, 0.14);
 
-  background: #fcfdfb;
+  background: transparent;
+  border-radius: 0;
 
-  border: 1px solid rgba(186, 216, 182, 0.45);
+  transition: none;
+}
 
-  transition: all 250ms ease;
+.Meaning:last-child {
+  margin-bottom: 0;
 }
 
 .Meaning:hover {
-  transform: translateY(-2px);
-
-  box-shadow: 0 16px 35px rgba(1, 53, 44, 0.08);
+  transform: none;
+  box-shadow: none;
 }
 
 .Meaning-header {
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
 .Meaning h3 {
-  display: inline-block;
-
   margin: 0;
 
-  padding: 8px 18px;
+  color: #2c765e;
 
-  border-radius: 30px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
 
-  background: rgba(97, 179, 144, 0.12);
+  text-transform: lowercase;
+}
+
+.Meaning-definitions {
+  margin: 0;
+  padding-left: 22px;
 
   color: var(--dark);
+}
 
-  font-size: 17px;
+.Meaning-definitions li {
+  margin-bottom: 16px;
+  padding-left: 6px;
+}
 
-  font-weight: 600;
-
-  text-transform: capitalize;
+.Meaning-definitions li:last-child {
+  margin-bottom: 0;
 }
 
 .definition {
@@ -45,21 +57,32 @@
 
   color: var(--dark);
 
-  line-height: 1.9;
+  line-height: 1.65;
 
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .example {
-  margin-top: 18px;
+  margin: 5px 0 0;
 
-  padding-left: 18px;
+  color: #65746f;
 
-  border-left: 3px solid var(--primary);
-
-  color: #5e756e;
-
+  font-size: 15px;
   font-style: italic;
 
-  line-height: 1.8;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .Meaning-definitions {
+    padding-left: 18px;
+  }
+
+  .definition {
+    font-size: 15px;
+  }
+
+  .example {
+    font-size: 14px;
+  }
 }
