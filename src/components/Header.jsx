@@ -1,5 +1,4 @@
 import "../styles/Header.css";
-import bookIcon from "../assets/icons/book.svg";
 import heroLeft from "../assets/illustrations/hero-left.svg";
 import heroRight from "../assets/illustrations/hero-right.svg";
 import heroDots from "../assets/illustrations/hero-dots.svg";
@@ -16,10 +15,6 @@ function Header({ onSearch }) {
       <div className="hero-glow"></div>
 
       <div className="Header-content">
-        <div className="Header-icon">
-          <img src={bookIcon} alt="Dictionary" />
-        </div>
-
         <h1>Dictionary</h1>
 
         <p>Find definitions, pronunciations and examples.</p>
