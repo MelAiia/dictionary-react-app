@@ -1,8 +1,42 @@
 .Dictionary {
-  max-width: 850px;
-  margin: 60px auto;
-  background: var(--white);
-  border-radius: 24px;
-  padding: 45px;
+  max-width: 1180px;
+  margin: 24px auto;
+  padding: 0 20px;
+}
+
+.Dictionary-results {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 32px;
+
+  margin-top: 18px;
+  padding: 40px;
+
+  background: var(--surface);
+  border: 1px solid rgba(199, 218, 187, 0.5);
+  border-bottom: none;
+  border-radius: 18px 18px 0 0;
   box-shadow: 0 15px 40px rgba(1, 53, 44, 0.08);
+}
+
+.Dictionary-main {
+  min-width: 0;
+}
+
+@media (max-width: 700px) {
+  .Dictionary {
+    margin: 12px auto;
+    padding: 0 12px;
+  }
+
+  .Dictionary-results {
+    gap: 24px;
+    padding: 22px 18px;
+  }
+}
+
+@media (max-width: 420px) {
+  .Dictionary-results {
+    padding: 20px 14px;
+  }
 }

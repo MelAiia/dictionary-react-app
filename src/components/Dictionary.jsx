@@ -4,7 +4,7 @@ import "../styles/Dictionary.css";
 import Header from "./Header";
 import Results from "./Results";
 import Footer from "./Footer";
-import Photos from "./Photos";
+import Sidebar from "./Sidebar";
 
 const pexelsApiKey = "WCl3X2mk20KLfWxlaRc8q4zNz5OSMWu67yfOxtnAsFjRbsyyXVKQjwOE";
 
@@ -65,9 +65,15 @@ function Dictionary() {
     <main className="Dictionary">
       <Header onSearch={search} />
 
-      {result && <Results result={result} />}
+      {result && (
+        <section className="Dictionary-results">
+          <div className="Dictionary-main">
+            <Results result={result} />
+          </div>
 
-      {photos.length > 0 && <Photos photos={photos} />}
+          <Sidebar result={result} photos={photos} />
+        </section>
+      )}
 
       <Footer />
     </main>
