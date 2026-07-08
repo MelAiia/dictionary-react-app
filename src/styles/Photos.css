@@ -1,28 +1,27 @@
 .Photos {
-  margin-top: 35px;
-
-  padding: 30px;
-
-  border-radius: 22px;
-
-  background: var(--white);
-
-  box-shadow: 0 10px 30px rgba(1, 53, 44, 0.08);
-
-  text-align: center;
+  margin-top: 0;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: left;
 }
 
 .Photos-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  grid-template-columns: 1fr;
+  gap: 10px;
 }
 
 .Photos-link {
+  display: none;
+}
+
+.Photos-link:first-child {
   display: block;
   overflow: hidden;
-  border-radius: 14px;
-  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  aspect-ratio: 16 / 10;
 }
 
 .Photos-image {
