@@ -27,7 +27,7 @@ function Footer() {
       >
         hosted on Netlify
       </a>
-      .
+      .<div className="Footer-heart">♡</div>
     </footer>
   );
 }

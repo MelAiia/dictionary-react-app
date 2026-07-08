@@ -1,18 +1,46 @@
 .Footer {
-  border-top: 1px solid var(--border);
-  padding-top: 30px;
-  margin-top: 60px;
+  margin-top: 0;
+  padding: 22px 28px;
+
+  background: var(--surface-soft);
+  border: 1px solid rgba(199, 218, 187, 0.55);
+  border-top: none;
+  border-radius: 0 0 18px 18px;
+
   text-align: center;
-  font-size: 13px;
+
   color: var(--text);
-  line-height: 1.7;
+
+  font-size: 14px;
+  line-height: 1.8;
+
+  box-shadow: 0 10px 26px rgba(1, 53, 44, 0.05);
 }
 
 .Footer a {
-  color: var(--primary);
-  text-decoration: none;
+  color: var(--dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  transition: color 200ms ease;
 }
 
 .Footer a:hover {
+  color: var(--primary);
+}
+
+.Footer-heart {
+  margin-top: 6px;
+
   color: var(--dark);
+
+  font-size: 22px;
+  line-height: 1;
+}
+
+@media (max-width: 700px) {
+  .Footer {
+    padding: 20px 18px;
+    font-size: 13px;
+  }
 }
