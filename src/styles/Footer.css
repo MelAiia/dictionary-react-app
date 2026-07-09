@@ -42,5 +42,6 @@
   .Footer {
     padding: 20px 18px;
     font-size: 13px;
+    line-height: 1.5;
   }
 }

@@ -123,11 +123,11 @@
 
 @media (max-width: 700px) {
   .Header {
-    padding: 30px 20px 0;
+    padding: 24px 16px 0;
   }
 
   .Header h1 {
-    font-size: 44px;
+    font-size: 36px;
   }
 
   .Header p {
@@ -146,5 +146,12 @@
 
   .hero-right {
     right: -20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-left,
+  .hero-right {
+    display: none;
   }
 }

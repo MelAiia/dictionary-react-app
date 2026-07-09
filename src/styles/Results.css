@@ -55,6 +55,9 @@
 }
 
 @media (max-width: 420px) {
+  .Results-header {
+    gap: 12px;
+  }
   .Results-header h2 {
     font-size: 30px;
   }

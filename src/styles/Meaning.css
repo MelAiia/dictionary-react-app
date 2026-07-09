@@ -74,6 +74,11 @@
 }
 
 @media (max-width: 700px) {
+  .Meaning {
+    padding-bottom: 18px;
+
+    margin-bottom: 18px;
+  }
   .Meaning-definitions {
     padding-left: 18px;
   }
